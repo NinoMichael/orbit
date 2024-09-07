@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" fx:controller="com.orbit.controllers.SplashController" spacing="20" style="-fx-background-color: indigo;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22">
+   <children>
+      <AnchorPane prefHeight="209.0" prefWidth="1851.0" style="-fx-pref-width: 800; -fx-pref-height: 600;">
+         <children>
+            <ImageView fx:id="logoImage" fitHeight="222.0" fitWidth="342.0" layoutX="229.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/orbit.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="refCode" layoutX="759.0" layoutY="566.0" prefHeight="20.0" prefWidth="105.0" text="\@CodePulse" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
