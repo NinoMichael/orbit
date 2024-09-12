@@ -10,6 +10,15 @@ public class Utilisateur {
 	public LocalDateTime dateInscription;
 	public LocalDateTime LastLogged;
 	
+	public Utilisateur(int id, String identifiant, String email, String mdp, LocalDateTime dateInscription, LocalDateTime lastLogged) {
+		this.id = id;
+		this.identifiant = identifiant;
+		this.email = email;
+		this.mdp = mdp;
+		this.dateInscription = dateInscription;
+		this.LastLogged = lastLogged;
+	}
+	
 	public Utilisateur(String identifiant, String mdp) {
 		this.identifiant = identifiant;
 		this.mdp = mdp;
@@ -56,7 +65,21 @@ public class Utilisateur {
 	public void setMdp(String mdp) {
 		this.mdp = mdp;
 	}
-	
-	
+
+	public LocalDateTime getDateInscription() {
+		return dateInscription;
+	}
+
+	public void setDateInscription(LocalDateTime dateInscription) {
+		this.dateInscription = dateInscription;
+	}
+
+	public LocalDateTime getLastLogged() {
+		return LastLogged;
+	}
+
+	public void setLastLogged(LocalDateTime lastLogged) {
+		LastLogged = lastLogged;
+	}
 	
 }	

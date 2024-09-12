@@ -1,12 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Font?>
 
-<VBox xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" spacing="10" alignment="CENTER" style="-fx-padding: 20;">
-    <Label text="Welcome to JavaFX Application" style="-fx-font-size: 18px;"/>
-    <TextField fx:id="textField" promptText="Enter text here"/>
-    <Button text="Click Me"/>
+<VBox style="-fx-pref-width: 800; -fx-pref-height: 600;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orbit.controllers.LevelSituationController">
+   <children>
+      <AnchorPane id="leftContainer" prefHeight="509.0" prefWidth="800.0" style="-fx-background-color: white; -fx-pref-width: 250; -fx-pref-height: 600;">
+         <children>
+            <AnchorPane prefHeight="600.0" prefWidth="285.0" style="-fx-background-color: indigo;">
+               <children>
+                  <ImageView fitHeight="183.0" fitWidth="244.0" layoutX="20.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/orbit.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="17.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/balise.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="169.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/balise.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="39.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/balise.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="132.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/balise.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="244.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/balise.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="121.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/balise.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="233.0" layoutY="537.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/smiley.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="142.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/smiley.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="88.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/smiley.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="39.0" layoutY="548.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/smiley.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="214.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/smiley.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="39.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/smiley.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="121.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/smiley.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="214.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/balise.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="9.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/balise.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="233.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/smiley.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="131.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/balise.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconChecked1" fitHeight="22.0" fitWidth="22.0" layoutX="17.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/smiley.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label id="titleRegisterStepOne" alignment="CENTER" contentDisplay="CENTER" layoutX="357.0" layoutY="113.0" prefHeight="38.0" prefWidth="377.0" text="Vous y êtes presque !" textAlignment="CENTER">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnFinish" layoutX="381.0" layoutY="478.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="316.0" style="-fx-background-color: indigo; -fx-font-weight: bold;" text="Terminer" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="388.0" layoutY="177.0" prefHeight="68.0" prefWidth="316.0" text="Bienvenue sur la plateforme OrbIT ! Avant de commencer, veuillez renseigner votre niveau de connaissance dans le domaine de l'informatique " textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Leelawadee UI" size="14.0" />
+               </font>
+            </Label>
+            
+            <RadioButton fx:id = "option1" layoutX="381.0" layoutY="275.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="304.0" text="Je débute dans ce secteur">
+               <font>
+                  <Font name="Leelawadee UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id = "option2" layoutX="381.0" layoutY="312.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="304.0" text="J'ai quelques bases en informatique">
+               <font>
+                  <Font name="Leelawadee UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id = "option3" layoutX="381.0" layoutY="354.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="304.0" text="Je suis à l'aise avec les concepts avancés">
+               <font>
+                  <Font name="Leelawadee UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id = "option4" layoutX="381.0" layoutY="385.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="304.0" text="Je suis expert et souhaite approfondir mes connaissances" wrapText="true">
+               <font>
+                  <Font name="Leelawadee UI" size="14.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+   </children>
+   
 </VBox>

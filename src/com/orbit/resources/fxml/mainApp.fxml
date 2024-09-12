@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="10" style="-fx-pref-width: 800; -fx-pref-height: 600;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orbit.controllers.MainAppController">
+   <children>
+      <BorderPane fx:id="mainPane" focusTraversable="true" prefHeight="200.0" prefWidth="200.0" style="-fx-pref-height: 600; -fx-pref-width: 800;">
+         <left>
+            <AnchorPane prefHeight="541.0" prefWidth="100.0" style="-fx-background-color: indigo; -fx-border-radius: 0 120 0 0;" BorderPane.alignment="CENTER">
+               <effect>
+                  <DropShadow height="0.0" radius="4.75">
+                     <color>
+                        <Color opacity="0.5534350872039795" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <ImageView fx:id="houseIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/home.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="settingIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/settings.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="courseIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/learning.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="marketIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/store.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="progressionIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/progression.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="communityIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/community.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="exerciseIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/exercise.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Rectangle fx:id="rectangle1" arcHeight="5.0" arcWidth="5.0" height="582.0" layoutX="-4.0" layoutY="-41.0" opacity="0.61" stroke="BLACK" strokeType="INSIDE" width="105.0" />
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane id="topMenuContainer" prefHeight="47.0" prefWidth="800.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle id="imgContainer" arcHeight="5.0" fill="INDIGO" height="67.0" layoutY="-8.0" smooth="false" stroke="TRANSPARENT" strokeType="INSIDE" width="100.0">
+                     <effect>
+                        <DropShadow height="0.0" radius="4.75">
+                           <color>
+                              <Color opacity="0.550000011920929" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Rectangle>
+                  <ImageView fitHeight="53.0" fitWidth="90.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/orbit.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="157.0" layoutY="14.0" prefHeight="32.0" prefWidth="308.0" promptText="Rechercher un cours, exercice, ..." style="-fx-border-radius: 12;">
+                     <font>
+                        <Font name="Leelawadee UI" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <AnchorPane fx:id="profilContainer" layoutX="650.0" layoutY="-1.0" prefHeight="59.0" prefWidth="156.0">
+                     <children>
+                        <Label fx:id = "loginUser" layoutX="66.0" layoutY="12.0" prefHeight="18.0" prefWidth="76.0" text="Jerry">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="66.0" layoutY="30.0" prefHeight="18.0" prefWidth="76.0" text="Score : 621" textFill="INDIGO">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="TRANSPARENT" layoutX="39.0" layoutY="30.0" radius="17.0" stroke="#0000002c" strokeType="INSIDE" />
+                        <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="28.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 500;">
+                           <image>
+                              <Image url="@../../../../../../../Music/jerry.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+                  <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="630.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/bell.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="476.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/search.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle fx:id="rectangle3" arcHeight="5.0" arcWidth="5.0" height="61.0" layoutY="-2.0" opacity="0.61" stroke="BLACK" strokeType="INSIDE" width="806.0" />
+               </children>
+               <effect>
+                  <DropShadow height="67.76" radius="16.44" width="0.0">
+                     <color>
+                        <Color opacity="0.2977099120616913" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane fx:id="AccountContainer" prefHeight="507.0" prefWidth="706.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                  <children>
+                  <fx:include fx:id="includePane" source="dashboard.fxml" />
+                  <Pane fx:id="optionAccountContainer" layoutX="559.0" layoutY="8.0" prefHeight="80.0" prefWidth="126.0" style="-fx-background-color: white; -fx-border-radius: 10;">
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0">
+                           <color>
+                              <Color opacity="0.25190839171409607" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Label fx:id="textProfil" layoutX="44.0" layoutY="6.0" text="Profil">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <ImageView fx:id="logoutIcon" fitHeight="24.0" fitWidth="23.0" layoutX="16.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icons/logout.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="textLogout" layoutX="44.0" layoutY="43.0" prefHeight="17.0" prefWidth="78.0" text="Déconnexion">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <ImageView fx:id="profileUser" fitHeight="24.0" fitWidth="23.0" layoutX="16.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icons/profile-user.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <AnchorPane fx:id="communityContainer" layoutX="14.0" layoutY="293.0" prefHeight="71.0" prefWidth="112.0" style="-fx-background-color: indigo; -fx-border-radius: 10;">
+                     <children>
+                        <Label fx:id="forumMenu" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="88.0" text="Forum" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="forumMenu" layoutX="6.0" layoutY="27.0" prefHeight="17.0" prefWidth="88.0" text="Evénèments " textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="forumMenu" layoutX="6.0" layoutY="49.0" prefHeight="17.0" prefWidth="108.0" text="Tutorat &amp; mentorat" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                   <AnchorPane fx:id="progressionContainer" layoutX="14.0" layoutY="235.0" prefHeight="56.0" prefWidth="120.0" style="-fx-background-color: indigo; -fx-border-radius: 10;">
+                     <children>
+                        <Label fx:id="statMenu" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="88.0" text="Statistiques" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="historiqueMenu" layoutX="6.0" layoutY="27.0" prefHeight="17.0" prefWidth="114.0" text="Historique d'activités" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="settingContainer" layoutX="14.0" layoutY="422.0" prefHeight="95.0" prefWidth="120.0" style="-fx-background-color: indigo; -fx-border-radius: 10;">
+                     <children>
+                        <Label id="forumMenu" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="88.0" text="Paramètres" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label id="forumMenu" layoutX="6.0" layoutY="27.0" prefHeight="17.0" prefWidth="114.0" text="Support" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label id="forumMenu" layoutX="6.0" layoutY="48.0" prefHeight="17.0" prefWidth="114.0" text="FAQ" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label id="forumMenu" layoutX="6.0" layoutY="65.0" prefHeight="17.0" prefWidth="114.0" text="A propos" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="courseContainer" layoutX="14.0" layoutY="98.0" prefHeight="95.0" prefWidth="120.0" style="-fx-background-color: indigo; -fx-border-radius: 10;">
+                     <children>
+                        <Label id="forumMenu" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="88.0" text="Débutant" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label id="forumMenu" layoutX="6.0" layoutY="27.0" prefHeight="17.0" prefWidth="114.0" text="Intermédiaire" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label id="forumMenu" layoutX="6.0" layoutY="48.0" prefHeight="17.0" prefWidth="114.0" text="Avancé" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label id="forumMenu" layoutX="6.0" layoutY="65.0" prefHeight="17.0" prefWidth="114.0" text="Expert" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Rectangle fx:id="rectangle2" arcHeight="5.0" arcWidth="5.0" height="546.0" layoutY="-5.0" opacity="0.61" stroke="BLACK" strokeType="INSIDE" width="705.0" />
+                  <DialogPane fx:id="dialogLogoutContainer" layoutX="186.0" layoutY="113.0" prefHeight="181.0" prefWidth="347.0" />
+                  <Rectangle fx:id="headerDialog" arcHeight="5.0" arcWidth="5.0" fill="INDIGO" height="36.0" layoutX="186.0" layoutY="113.0" stroke="TRANSPARENT" strokeType="INSIDE" width="347.0" />
+                  <Label fx:id="confirmLogout" alignment="CENTER" contentDisplay="CENTER" layoutX="201.0" layoutY="170.0" prefHeight="20.0" prefWidth="319.0" text="Etes-vous sûr de vous déconnecter ?" textAlignment="CENTER">
+                     <font>
+                        <Font name="Leelawadee UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="acceptLogout" layoutX="390.0" layoutY="228.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: indigo;" text="Oui" textFill="WHITE">
+                     <font>
+                        <Font name="Leelawadee UI" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.2442748099565506" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="cancelLogout" layoutX="245.0" layoutY="228.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: white;" text="Non">
+                     <font>
+                        <Font name="Leelawadee UI" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.25190839171409607" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fx:id="infoDialog" fitHeight="21.0" fitWidth="19.0" layoutX="201.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/information.png" />
+                     </image>
+                  </ImageView>
+                  </children>
+               <effect>
+                  <DropShadow height="10.0" radius="2.0" width="0.0">
+                     <color>
+                        <Color opacity="0.4007633626461029" />
+                     </color>
+                  </DropShadow>
+               </effect> 
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

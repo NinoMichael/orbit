@@ -11,7 +11,9 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 import com.orbit.dao.ProfilUtilisateurDao;
+import com.orbit.dao.UtilisateurDao;
 import com.orbit.models.ProfilUtilisateur;
+import com.orbit.models.Utilisateur;
 
 public class RegisterStepTwoController {
 	@FXML
@@ -62,6 +64,9 @@ public class RegisterStepTwoController {
     public void switchToLevel() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/orbit/resources/fxml/levelSituation.fxml"));
         Scene registerScene = new Scene(loader.load());
+        
+        LevelSituationController levelSituationController = loader.getController();
+        levelSituationController.setStage(stage);
 
         if (stage != null) {
             stage.setScene(registerScene);

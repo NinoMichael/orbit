@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="10" style="-fx-pref-width: 800; -fx-pref-height: 600;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane id="imgLogo" focusTraversable="true" prefHeight="200.0" prefWidth="200.0" style="-fx-pref-height: 600; -fx-pref-width: 800;">
+         <left>
+            <AnchorPane prefHeight="541.0" prefWidth="100.0" style="-fx-background-color: indigo; -fx-border-radius: 0 120 0 0;" BorderPane.alignment="CENTER">
+               <effect>
+                  <DropShadow height="0.0" radius="4.75">
+                     <color>
+                        <Color opacity="0.5534350872039795" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <ImageView id="houseIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/home.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="settingIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/settings.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="courseIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/learning.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="marketIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/store.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="progressionIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/progression.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="communityIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/community.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="exerciseIcon" fitHeight="22.0" fitWidth="26.0" layoutX="39.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/exercise.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane id="topMenuContainer" prefHeight="47.0" prefWidth="800.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle id="imgContainer" arcHeight="5.0" fill="INDIGO" height="67.0" layoutY="-8.0" smooth="false" stroke="TRANSPARENT" strokeType="INSIDE" width="100.0">
+                     <effect>
+                        <DropShadow height="0.0" radius="4.75">
+                           <color>
+                              <Color opacity="0.550000011920929" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Rectangle>
+                  <ImageView fitHeight="53.0" fitWidth="90.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/orbit.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="157.0" layoutY="14.0" prefHeight="32.0" prefWidth="308.0" promptText="Rechercher un cours, exercice, ..." style="-fx-border-radius: 12;">
+                     <font>
+                        <Font name="Leelawadee UI" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <AnchorPane fx:id="profilContainer" layoutX="650.0" layoutY="-1.0" prefHeight="59.0" prefWidth="156.0">
+                     <children>
+                        <Label fx:id="loginUser" layoutX="66.0" layoutY="12.0" prefHeight="18.0" prefWidth="76.0" text="Jerry">
+                           <font>
+                              <Font name="Leelawadee UI" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="66.0" layoutY="30.0" prefHeight="18.0" prefWidth="76.0" text="Score : 621" textFill="INDIGO">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="TRANSPARENT" layoutX="39.0" layoutY="30.0" radius="17.0" stroke="#0000002c" strokeType="INSIDE" />
+                        <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="28.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 500;">
+                           <image>
+                              <Image url="@../../../../../../../Music/jerry.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+                  <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="630.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/bell.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="476.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons/search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow height="67.76" radius="16.44" width="0.0">
+                     <color>
+                        <Color opacity="0.2977099120616913" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane fx:id="AccountContainer" prefHeight="507.0" prefWidth="706.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <effect>
+                  <DropShadow height="2.5" radius="0.125" width="0.0">
+                     <color>
+                        <Color opacity="0.4007633626461029" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <AnchorPane fx:id="welcomeContainer" layoutX="20.0" layoutY="14.0" prefHeight="200.0" prefWidth="440.0" style="-fx-background-color: indigo; -fx-border-radius: 100;">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.49618321657180786" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

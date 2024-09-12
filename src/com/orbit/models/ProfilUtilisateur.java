@@ -8,12 +8,18 @@ public class ProfilUtilisateur {
 	public String nom;
 	public LocalDate naissance;
 	public String pays;
-	
+	public String biographie;
+	public Niveau niveau;
+
 	public ProfilUtilisateur (Utilisateur utilisateur, String nom, LocalDate naissance, String pays) {
 		this.utilisateur = utilisateur;
 		this.nom = nom;
 		this.naissance = naissance;
 		this.pays = pays;
+	}
+	
+	public ProfilUtilisateur(int id) {
+		this.id = id;
 	}
 
 	public int getId() {
@@ -56,5 +62,20 @@ public class ProfilUtilisateur {
 		this.pays = pays;
 	}
 	
+	public String getBiographie() {
+		return biographie;
+	}
+
+	public void setBiographie(String biographie) {
+		this.biographie = biographie;
+	}
+
+	public Niveau getNiveau() {
+		return niveau;
+	}
 	
+	public void setNiveau(Niveau niveau) {
+		this.niveau = niveau;
+	}
+
 }

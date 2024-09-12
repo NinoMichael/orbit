@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ProgressBar?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="courseScrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-pref-height: 538; -fx-pref-width: 706;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orbit.controllers.IntroCoursController">
+   <content>
+      <AnchorPane prefHeight="533.0" prefWidth="700.0">
+         <children>
+            <AnchorPane layoutX="34.0" layoutY="25.0" prefHeight="172.0" prefWidth="635.0" style="-fx-background-color: indigo;">
+               <children>
+                  <ImageView fitHeight="175.0" fitWidth="215.0" layoutX="403.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/imgCourse.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="titleWelcome" layoutX="31.0" layoutY="14.0" prefHeight="64.0" prefWidth="341.0" text="Explorez nos parcours de formation informatique" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="78.0" prefHeight="76.0" prefWidth="337.0" text="Accédez à des cours adaptés à tous les niveaux, des bases aux concepts avancés, et développez vos compétences grâce à un apprentissage structuré et progressif." textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Leelawadee UI" size="12.0" />
+                     </font></Label>
+               </children>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.3015267252922058" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </AnchorPane>
+            <TabPane layoutX="34.0" layoutY="219.0" prefHeight="313.0" prefWidth="636.0" style="-fx-background-color: white;" stylesheets="@../style/introCours.css" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab closable="false" text="Débutant">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane layoutX="28.0" layoutY="14.0" prefHeight="275.0" prefWidth="580.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <AnchorPane prefHeight="142.0" prefWidth="290.0" style="-fx-background-color: white;">
+                                       <effect>
+                                          <DropShadow>
+                                             <color>
+                                                <Color opacity="0.4007633626461029" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <children>
+                                          <Label fx:id="titleCours" layoutX="82.0" layoutY="14.0" prefHeight="25.0" prefWidth="207.0" text="HTML 5 &amp; CSS 3">
+                                             <font>
+                                                <Font name="Leelawadee UI Bold" size="13.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <ImageView fitHeight="54.0" fitWidth="51.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/html.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ProgressBar layoutX="82.0" layoutY="57.0" prefHeight="13.0" prefWidth="184.0" progress="0.0" style="-fx-background-color: white;" />
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Intermédiaire">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane layoutX="28.0" layoutY="14.0" prefHeight="275.0" prefWidth="580.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <AnchorPane prefHeight="142.0" prefWidth="290.0" style="-fx-background-color: white;">
+                                       <effect>
+                                          <DropShadow>
+                                             <color>
+                                                <Color opacity="0.4007633626461029" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <children>
+                                          <Label layoutX="82.0" layoutY="14.0" prefHeight="25.0" prefWidth="207.0" text="Le langage JavaScript">
+                                             <font>
+                                                <Font name="Leelawadee UI Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="54.0" fitWidth="51.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/js.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ProgressBar layoutX="82.0" layoutY="57.0" prefHeight="13.0" prefWidth="184.0" progress="0.0" style="-fx-background-color: white;" />
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Avancé">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane layoutX="28.0" layoutY="14.0" prefHeight="275.0" prefWidth="580.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <AnchorPane prefHeight="142.0" prefWidth="290.0" style="-fx-background-color: white;">
+                                       <effect>
+                                          <DropShadow>
+                                             <color>
+                                                <Color opacity="0.4007633626461029" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <children>
+                                          <Label layoutX="82.0" layoutY="14.0" prefHeight="25.0" prefWidth="207.0" text="La technologie Spring">
+                                             <font>
+                                                <Font name="Leelawadee UI Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="54.0" fitWidth="51.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/spring.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ProgressBar layoutX="82.0" layoutY="57.0" prefHeight="13.0" prefWidth="184.0" progress="0.0" style="-fx-background-color: white;" />
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab closable="false" text="Expert">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane layoutX="28.0" layoutY="14.0" prefHeight="275.0" prefWidth="580.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <AnchorPane prefHeight="142.0" prefWidth="290.0" style="-fx-background-color: white;">
+                                       <effect>
+                                          <DropShadow>
+                                             <color>
+                                                <Color opacity="0.4007633626461029" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <children>
+                                          <Label layoutX="82.0" layoutY="14.0" prefHeight="25.0" prefWidth="207.0" text="Le système BlockChain">
+                                             <font>
+                                                <Font name="Leelawadee UI Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="54.0" fitWidth="51.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/blockchain.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ProgressBar layoutX="82.0" layoutY="57.0" prefHeight="13.0" prefWidth="184.0" progress="0.0" style="-fx-background-color: white;" />
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

@@ -2,6 +2,7 @@ package com.orbit.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.orbit.models.ProfilUtilisateur;
@@ -27,4 +28,35 @@ public class ProfilUtilisateurDao {
             e.printStackTrace();
         }
     }
+	
+	 public static void setNiveauProfil(ProfilUtilisateur profil) {
+	        String query = "UPDATE profil_utilisateur SET id_niveau = ? WHERE id = ?";
+	        try (Connection connection = DatabaseConnection.getConnection();
+	             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+
+	            preparedStatement.setInt(1, profil.getNiveau().getId());
+	            preparedStatement.setInt(2, profil.getId());
+	            preparedStatement.executeUpdate();
+
+	        } catch (SQLException e) {
+	            e.printStackTrace();
+	        }
+	 }
+	 
+	 public static ProfilUtilisateur getIdProfilById() {
+	        String query = "SELECT * FROM profil_utilisateur ORDER BY id DESC LIMIT 1";
+	        try (Connection connection = DatabaseConnection.getConnection();
+	             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+	        	
+	            ResultSet resultSet = preparedStatement.executeQuery();
+	            
+	            if (resultSet.next()) {
+	                int idProfil = resultSet.getInt("id");
+	                return new ProfilUtilisateur(idProfil);
+	            }
+	        } catch (SQLException e) {
+	            e.printStackTrace();
+	        }
+	        return null;
+	 }
 }

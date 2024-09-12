@@ -11,12 +11,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // Charger le Splash Screen
         FXMLLoader splashLoader = new FXMLLoader(getClass().getResource("/com/orbit/resources/fxml/splash.fxml"));
         Parent splashRoot = splashLoader.load();
         
         SplashController splashController = splashLoader.getController();
-        
         splashController.setStage(primaryStage);
         
         Scene splashScene = new Scene(splashRoot);
